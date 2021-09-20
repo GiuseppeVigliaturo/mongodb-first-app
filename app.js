@@ -1,6 +1,6 @@
 const app = require("express");
 const { MongoClient } = require("mongodb");
-const dbUri ='mongodb+srv://Giuseppe:mdb-123@cluster0.hzl8i.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
+const dbUri ='stringa connessione';
 const mongoClient = new MongoClient(dbUri, {useUnifiedTopology:true})
 let blogDB,articoliCollection;
 
