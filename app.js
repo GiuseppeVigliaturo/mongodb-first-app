@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const { MongoClient } = require("mongodb");
-const dbUri ='mongodb+srv://Giuseppe:mdb-123@cluster0.hzl8i.mongodb.net/blog?retryWrites=true&w=majority';
+const dbUri ='stringa connessione';
 const mongoClient = new MongoClient(dbUri, {useUnifiedTopology:true})
 let blogDB,articoliCollection;
 
@@ -64,4 +64,3 @@ app.get('/cancella-articolo', (req,res) => {});
 //gestione errori
 run().catch(err => console.log('Errore connessione' + err));
 
-// app.listen(3000,console.log("connessione avvenuta"));
